@@ -1,7 +1,13 @@
+:root {
+	--color-main: #0073AA;
+	--color-header: #2C8BD0;
+	--font-main:'Raleway', sans-serif;
+	--color-fint-main:#000000;
+}
 header {
 	width: 100%;
 	height: 80px;
-	background-color:#2C8BD0;
+	background-color:var(--color-header);
 	position: fixed;
     right: 0;
     left: 0;
@@ -19,19 +25,31 @@ header {
 	width: 80%;	
 	margin: 0 auto;
 	padding-top: 100px;
+	font-family: var(--font-main);	
 }
+
 .sidebar {	
 	width: 100%;	
 	padding: 20px;	
 	z-index: 101;
 	color: #fff;
-	border-radius: 4px;
-	background: rgb(0,115,170);
-	background: linear-gradient(0deg, rgba(0,115,170,1) 0%, rgba(44,139,208,1) 50%, rgba(0,115,170,1) 100%);
+	border-radius: 4px;	
+	background: var(--color-main);
+	background: linear-gradient(0deg, var(--color-main) 0%, var(--color-header) 50%, var(--color-main) 100%);
 }
-footer {
+
+.main-content {
 	width: 100%;	
-	background-color: #0073AA;
+	padding: 20px;	
+	z-index: 101;	
+	font-size: 16px;
+}
+
+
+footer {
+	width: 100%;
+	font-family: var(--font-main);	
+	background-color: var(--color-main);
 	color:#fff;
 }
 .footer-content {
